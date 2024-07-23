@@ -8,10 +8,10 @@ return {
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
 
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  -- languages
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.haskell" },
 
   -- documentation
   { import = "astrocommunity.pack.markdown" },
@@ -40,10 +40,8 @@ return {
   { import = "astrocommunity.test.neotest" },
 
   -- editor enhancements
-  { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   { import = "astrocommunity.workflow.bad-practices-nvim" },
-  -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
 }
