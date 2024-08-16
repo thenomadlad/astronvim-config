@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.haskell" },
+  { import = "astrocommunity.pack.terraform" },
 
   -- documentation
   { import = "astrocommunity.pack.markdown" },
