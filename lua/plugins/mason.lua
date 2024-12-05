@@ -18,14 +18,27 @@ return {
       ensure_installed = {
         'lua_ls',
         'rust_analyzer',
-        'pyright',
+        'pylsp',
       }
     })
     require('mason-nvim-dap').setup()
     require('mason-null-ls').setup({
       handlers = {}
     })
+    
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    require('lspconfig').pyright.setup({})
+    require('lspconfig').pylsp.setup({
+      capabilities = capabilities,
+      settings = {
+        pylsp = {
+          plugins = {
+            rope_autoimport = {
+              enabled = true
+            }
+          }
+        }
+      }
+    })
   end
 }

@@ -20,11 +20,11 @@ return {
     vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
     -- lsp things
-    vim.keymap.set({'v', 'n'}, '<leader>fci', builtin.lsp_incoming_calls, { desc = 'LSP find incoming calls' })
-    vim.keymap.set({'v', 'n'}, '<leader>fco', builtin.lsp_outgoing_calls, { desc = 'LSP find outgoing calls' })
-    vim.keymap.set({'v', 'n'}, '<leader>fi', builtin.lsp_implementations, { desc = 'LSP find implementation(s)' })
-    vim.keymap.set({'v', 'n'}, '<leader>fd', builtin.lsp_definitions, { desc = 'LSP find definition(s)' })
-    vim.keymap.set({'v', 'n'}, '<leader>ftd', builtin.lsp_type_definitions, { desc = 'LSP find type definition(s)' })
+    vim.keymap.set({'v', 'n'}, '<leader>lci', builtin.lsp_incoming_calls, { desc = 'LSP find incoming calls' })
+    vim.keymap.set({'v', 'n'}, '<leader>lco', builtin.lsp_outgoing_calls, { desc = 'LSP find outgoing calls' })
+    vim.keymap.set({'v', 'n'}, '<leader>li', builtin.lsp_implementations, { desc = 'LSP find implementation(s)' })
+    vim.keymap.set({'v', 'n'}, '<leader>ld', builtin.lsp_definitions, { desc = 'LSP find definition(s)' })
+    vim.keymap.set({'v', 'n'}, '<leader>ltd', builtin.lsp_type_definitions, { desc = 'LSP find type definition(s)' })
 
     -- tree sitter things
     vim.keymap.set('n', '<leader>fa', builtin.treesitter, { desc = 'List all using tree sitter' })

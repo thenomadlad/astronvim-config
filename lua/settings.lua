@@ -7,3 +7,7 @@ vim.opt.expandtab = true
 vim.bo.softtabstop = 2
 
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
+
+-- lsp action
+vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc="LSP code action" })
+vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc="LSP rename symbol" })
