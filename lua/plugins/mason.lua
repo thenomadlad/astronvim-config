@@ -25,9 +25,8 @@ return {
     require('mason-null-ls').setup({
       handlers = {}
     })
-    
-    require('lspconfig').pylsp.setup({
-      capabilities = capabilities,
+
+    vim.lsp.config('pylsp', {
       settings = {
         pylsp = {
           plugins = {
@@ -38,7 +37,7 @@ return {
         }
       }
     })
-    
-    require('lspconfig').rust_analyzer.setup({})
+
+    vim.lsp.enable('rust_analyzer')
   end
 }
